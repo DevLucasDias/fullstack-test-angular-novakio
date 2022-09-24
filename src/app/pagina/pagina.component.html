@@ -6,6 +6,37 @@
   // TODO: criar um método POST no api.service que envie o texto do input e exiba a resposta na página
 -->
 
-<h1>Título da página</h1>
+<div class="container">
+<!-- HEADER -->
+<header class="header">
+  <div class="titletext">
+    <h2>Título da página</h2>
+  </div>
+ 
 
-{{ apiGreeting }}
+</header>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <h1>Navbar</h1>
+  <a routerLink="/start" title="Envia para pagina Start" class="route-link">
+    Start
+  </a>
+</aside>
+
+<!-- MAIN CONTENT -->
+<main class="maincontent">
+  <h4>{{apiGreeting}}</h4>
+ 
+  <h4 *ngIf="apiGetDate">
+    <p>Hoje são {{apiGetDate.date |  date:'dd/MM/yyyy'}} às {{apiGetDate.time}}.</p>
+  </h4>
+
+  <form (ngSubmit)="sendFrase()">
+    <label for="textToBeShowed">Digite uma Frase: </label><br>
+    <input [(ngModel)]='textToBeShowed' name="textToBeShowed" type="text"><br>
+    <button type="submit">Enviar</button>
+    <h4 class="answerTextToBeShowed">{{textReturnFromApi}}</h4>
+  </form>
+</main>
+</div>

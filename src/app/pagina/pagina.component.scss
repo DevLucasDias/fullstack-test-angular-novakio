@@ -1,0 +1,84 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: #7950f2;
+    height: 170px;
+    text-align: center;
+}
+
+.titletext {
+    margin-top: 70px;
+}
+
+.sidebar {
+    min-width: 20px;
+    text-align: center;
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    padding: 10px 10px;
+    top: 170px;
+    left: 0;
+    bottom: 0;
+    background-color: #ced4da;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    background-color: #ced4da;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.sidebar a:hover,
+a:active {
+    background-color: #c4cdd6;
+}
+
+.maincontent {
+    position: absolute;
+    top: 170px;
+    left: 175px;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+
+}
+
+button {
+    background-color: #7950f2;
+    border: none;
+    color: white;
+    padding: 5px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+button:hover, a:active {
+    background-color: #9776f8;
+    color: #ece0fc;
+}
+
+input {
+    width: 400px;
+    padding: 12px 20px;
+    margin: 3px 0;
+    box-sizing: border-box;
+
+}
+
+.answerTextToBeShowed {
+    color: black;
+    margin: 10px 3px;
+
+}
+
