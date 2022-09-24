@@ -10,7 +10,9 @@
 }
 
 .titletext {
-    margin-top: 70px;
+    margin-top: 60px;
+    color: white;
+    font-size: 25px;
 }
 
 .sidebar {
@@ -72,6 +74,7 @@ input {
     width: 400px;
     padding: 12px 20px;
     margin: 3px 0;
+    border-radius: 10px;
     box-sizing: border-box;
 
 }
