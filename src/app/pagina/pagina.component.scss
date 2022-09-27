@@ -5,12 +5,12 @@
     right: 0;
     overflow: hidden;
     background-color: #7950f2;
-    height: 170px;
+    height: 20%;
     text-align: center;
 }
 
 .titletext {
-    margin-top: 60px;
+    margin-top: 4%;
     color: white;
     font-size: 25px;
 }
@@ -19,10 +19,10 @@
     min-width: 20px;
     text-align: center;
     height: 100%;
-    width: 160px;
+    width: 15%;
     position: fixed;
     padding: 10px 10px;
-    top: 170px;
+    top: 20%;
     left: 0;
     bottom: 0;
     background-color: #ced4da;
@@ -35,8 +35,9 @@
     color: black;
     padding: 14px 25px;
     text-align: center;
-    text-decoration: none;
+    // text-decoration: none; // Retirei esta parte, pois no exemplo havia o sublinhado.
     display: inline-block;
+    border-radius: 20px;
 }
 
 .sidebar a:hover,
@@ -46,8 +47,9 @@ a:active {
 
 .maincontent {
     position: absolute;
-    top: 170px;
-    left: 175px;
+    top: 20%;
+    left: 15%;
+    width: 85%;
     right: 0;
     bottom: 0;
     text-align: center;
@@ -55,7 +57,7 @@ a:active {
 }
 
 button {
-    background-color: #7950f2;
+    background-color: #7950f2; // Tomei a liberdade de cololocar o butão com a cor da header para combinar com o estilo.
     border: none;
     color: white;
     padding: 5px 40px;
@@ -64,9 +66,10 @@ button {
     display: inline-block;
     font-size: 16px;
     border-radius: 5px;
+    height: 40px;
 }
 button:hover, a:active {
-    background-color: #9776f8;
+    background-color: #9776f8; 
     color: #ece0fc;
 }
 
